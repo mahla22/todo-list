@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=width-device, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>todo list</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
@@ -12,7 +12,7 @@
     <h1>Todo list</h1>
     <div class="addTodo">
         <input type="text" placeholder="input a todo">
-        <button class="addBtn">
+        <button class="addBtn" onclick="insertTask()">
             <i class='bx bx-plus'></i>
         </button>
     </div>
@@ -21,7 +21,7 @@
             <button class="checkBtn">
                 <i class='bx bx-check'></i>
             </button>
-            <span class="inputedTask">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quaerat optio unde quis id incidunt animi maxime consequatur laborum quo nihil, debitis consequuntur quisquam eum earum iure dolores consectetur explicabo.</span>
+            <span class="taskLocation"></span>
             <button class="deleteBtn">
                 <i class='bx bx-trash'></i>
             </button>
@@ -31,6 +31,7 @@
         <span>you have <span class="counter">0</span> tasks</span>
         <button class="clearAll">clear all</button>
     </div>
-  </div>  
+  </div> 
+  <script src="script.js"></script> 
 </body>
 </html>
