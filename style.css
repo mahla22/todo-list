@@ -78,6 +78,9 @@ h1 {
 .task .checkBtn {
     width: 20px;
     height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background:#EEEEEE;
     border: 1px solid #f7f7f7;
     border-radius: 10%;
@@ -123,4 +126,7 @@ h1 {
     color: #f77f00;
     cursor: pointer;
 
+}
+.task.true .checkBtn {
+    background-color: rgb(17, 132, 240);
 }
